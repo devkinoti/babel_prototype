@@ -1,9 +1,12 @@
 <div class = "nairobi">   
     <div class = "hero-unit">
 	  <div class = "container">
+	  	<% flash.each do |key,value| %>
+		      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+		    <%end%>
 			<h1>High end online stores.</h1>
 			<h2>A beautiful fast online shop for you</h2>
-			<%= link_to "Lets get started",'#', class: "btn btn-large btn-success"%>
+			<%= link_to "Lets get started",new_customer_path, class: "btn btn-large btn-success"%>
 	  </div>
 	 </div>
 </div>
@@ -44,7 +47,7 @@
 	</div>
 </div>	
 	<p class= "lead">Everything is right out of the box,we only need your awesomeness to fill in the gaps.</h3>
-	<p class = "bc"><%= link_to "Lets get started",'#', class: "btn btn-large btn-success"%></p>
+	<p class = "bc"><%= link_to "Lets get started",new_customer_path, class: "btn btn-large btn-success"%></p>
 	
 		<%= render 'layouts/footer'%>
 </div>

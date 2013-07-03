@@ -13,9 +13,13 @@ Babel::Application.routes.draw do
   
   match '/workpolicy', to: 'pages#workpolicy'
   
+  resources :customers
+  
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
+  
+
 
 
 end
