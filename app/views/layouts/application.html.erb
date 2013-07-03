@@ -2,14 +2,32 @@
 <html>
 <head>
   <title>Babel</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<% set_meta_tags description: "Babel,providing simple focused ecommerce software.Beautiful fast online shops for you.",
+  	keywords: "Babel,ecommerce software,kenyan ecommerce providers,kenyan ecommerce apps,kenyan software shops,kenyan web developers,best kenyan web developers,top kenyan web developers,online shopping experience in kenya,mobile ecommerce software,top kenyan startups,bootstrapped kenyan startups,ruby on rails kenya" %>
+  	<%= display_meta_tags site: "Babel - simple focused software that's easy to love"%>
+  	
+  	<meta name = "viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+  	
+  	
+  	
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
 	<%=render 'layouts/header'%>
 
     <%= yield %>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42166201-1', 'babel.co.ke');
+  ga('send', 'pageview');
+
+   </script>
 
 </body>
 </html>
