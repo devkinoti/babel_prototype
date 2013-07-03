@@ -1,8 +1,4 @@
 Babel::Application.routes.draw do
-  ActiveAdmin.routes(self)
-
-  devise_for :admin_users, ActiveAdmin::Devise.config
-
   root to: "pages#home"  
   
   match '/home', to:  'pages#home'
@@ -16,6 +12,14 @@ Babel::Application.routes.draw do
   match '/work' ,to: 'work#work'
   
   match '/workpolicy', to: 'pages#workpolicy'
+  
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
+  
+  
+
 
 
 end
