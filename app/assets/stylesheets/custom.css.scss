@@ -1,0 +1,125 @@
+@import "bootstrap";
+
+@mixin box_sizing{
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     box-sizing:border-box;
+}
+
+body{
+     padding-top:40px;
+     font-weight:normal;
+
+}
+
+.navbar .container { height: 4em;}
+.navbar .container { padding-top: 25px;}
+.navbar-inner .container ul li a:hover {
+      color:#f1103a;
+      
+}
+
+#logo{
+       float:left;
+       margin-right:10px;
+       font-size:2em;
+       color: #f1103a;
+       text-transform:uppercase;
+       letter-spacing: -1px;
+       font-weight:bold;
+       line-height:1;
+       &:hover{
+           text-decoration:none;
+       }
+
+}
+
+.lead{
+        text-align:center;
+}
+.story{
+        text-align:justify;
+        
+        margin-bottom:40px;
+        font-size:1.45em;
+        line-height:2em;
+}
+.hc{
+        font-weight:normal;
+        color:#0088cc;
+}
+.bc{
+        text-align:center;
+        margin-bottom:40px;
+}
+
+.formc{
+        font-weight:normal;
+        font-size:1.55em;
+        color:#0088cc;
+        letter-spacing:0.2px;
+        text-align:center;
+        margin:0 auto;
+        padding:0 0 70px 0;
+        width:60%;
+}
+
+.featurecontainer{
+       margin-bottom:40px;
+}
+
+.basicstyling{
+       font-size:1.45em;
+       padding-left:100px;
+       line-height:2em;
+}
+
+.nairobi .hero-unit{ 
+         background: url('Nairobi.jpg') center no-repeat;
+         background-position: 95% top;
+         color:#fff;
+         height:580px;
+         text-align:center;
+}
+
+.hero-unit .container h1{
+         margin-top:180px;
+}
+
+
+.hero-unit .container h1,h2{
+         font-weight:normal;
+         color:#fff;
+         text-shadow: 0 1px 1px #000;
+}
+
+
+input,textarea,select, .uneditable-input {
+         border: 1px solid #bbb;
+         width: 100%;
+         padding:10px;
+         margin-bottom:15px;
+         @include box_sizing;
+
+}
+
+input {
+        height:auto !important;
+}
+
+#error_explanation{
+        color: #f00;
+         ul{
+         list-style:none;
+         margin:0 0 18px 0;
+        }
+}
+
+.field_with_errors{
+        @extend .control-group;
+        @extend .error; 
+}
+
+
+
+
