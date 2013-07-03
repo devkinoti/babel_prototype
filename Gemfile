@@ -30,7 +30,7 @@ gem "thin"
 gem 'bootstrap-sass','~>2.3.2.0'
 gem 'meta-tags',require: 'meta_tags'
 gem 'activeadmin'
-
+gem 'newrelic_rpm'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
