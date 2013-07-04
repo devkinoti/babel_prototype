@@ -28,7 +28,7 @@ end
 gem 'jquery-rails','~>2.3.0'
 gem "thin"
 gem 'bootstrap-sass','~>2.3.2.0'
-gem 'meta-tags',require: 'meta_tags'
+#gem 'meta-tags',require: 'meta_tags'
 gem 'activeadmin'
 gem 'newrelic_rpm'
 
