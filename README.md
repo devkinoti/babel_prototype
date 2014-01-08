@@ -7,4 +7,4 @@ Working with
  *gem active-admin 
 
 
-Sample copywriting practice
+Sample copywriting
